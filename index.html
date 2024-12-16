@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="./media/gathering-storm.1920x1080.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <header>
+      <h1>Weather report</h1>
+      <div>
+        <input
+          type="text"
+          name="city-search"
+          id="city-search"
+          placeholder="city name.."
+          required
+        />
+        <button type="button" id="search-button">Search</button>
+      </div>
+      <div id="select-container">
+        <p>Choose report date</p>
+        <select name="" id="date-select">
+          <option value="1">Today</option>
+          <option value="2">Tomorrow</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <label for="main-cities">Main cities</label>
+      <section id="main-cities">
+        <div id="main-cards"></div>
+      </section>
+      <label for="ls-cities">saved cities</label>
+      <section id="ls-cities">
+        <div id="ls-cards"></div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+body {
+  overflow: hidden;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.video-background {
+  position: fixed; /* Keeps the video fixed in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hides parts of the video that overflow */
+  z-index: -1; /* Places the video behind other content */
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the video */
+  min-width: 100%; /* Ensures the video covers the width */
+  min-height: 100%; /* Ensures the video covers the height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+}
+header {
+  background: rgba(255, 255, 255, 0.089);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  gap: 20px;
+  color: aliceblue;
+}
+#city-search {
+  background: rgba(60, 60, 85, 0.295);
+  border-radius: 5px;
+  border: 1px inset rgba(4, 23, 126, 0.521);
+  color: whitesmoke;
+  padding: 2px;
+}
+#city-search:focus {
+  outline: none;
+}
+#search-button {
+  color: rgb(199, 199, 199);
+  background: rgb(31, 82, 192);
+  border: 1px outset rgba(4, 13, 66, 0.521);
+  border-radius: 5px;
+  padding: 2px;
+  transition: 500ms;
+  font-weight: bold;
+}
+#search-button:hover {
+  color: gray;
+  background: rgb(65, 124, 252);
+  border: 1px outset rgba(4, 23, 126, 0.521);
+  border-radius: 5px;
+  padding: 2px;
+  transition: 500ms;
+}
+#search-button:active {
+  color: gray;
+  background: rgb(65, 252, 143);
+  border: 1px outset rgba(4, 23, 126, 0.521);
+  border-radius: 5px;
+  padding: 2px;
+}
+#select-container {
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  gap: 10px;
+}
+#date-select {
+  background: rgba(60, 60, 85, 0.295);
+  border-radius: 5px;
+  border: 1px inset rgba(4, 23, 126, 0.521);
+  color: whitesmoke;
+  padding: 2px;
+}
+#date-select option {
+  background: rgb(53, 53, 53);
+}
+#main-cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h2 {
+  display: block;
+}
+label {
+  font-size: 30px;
+  text-align: center;
+}
+.cityCard {
+  color: rgb(242, 253, 255);
+  background: rgba(48, 106, 182, 0.315);
+  padding: 20px;
+  margin: 3px;
+  width: 30vw;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px outset rgba(56, 89, 240, 0.226);
+}
+#ls-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
