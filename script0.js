@@ -48,8 +48,8 @@ const fetcher = async (usrInputVal) => {
       alert("City already exists");
     } else {
       savedCities.push(userCity);
-      localStorage.setItem("savedCities", JSON.stringify(savedCities)); // Save to localStorage
-      lsCities(); // Update the displayed list
+      localStorage.setItem("savedCities", JSON.stringify(savedCities));
+      lsCities();
     }
   }
 };
@@ -80,5 +80,4 @@ function lsCities() {
   });
 }
 
-// Load saved cities on page load
 lsCities();
