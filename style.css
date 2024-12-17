@@ -4,35 +4,37 @@
   padding: 0;
   font-family: monospace;
 }
-body {
-  overflow: hidden;
-}
+
 main {
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 2vh;
 }
 .video-background {
-  position: fixed; /* Keeps the video fixed in the background */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Hides parts of the video that overflow */
-  z-index: -1; /* Places the video behind other content */
+  overflow: hidden; 
+  z-index: -1;
 }
 video {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centers the video */
-  min-width: 100%; /* Ensures the video covers the width */
-  min-height: 100%; /* Ensures the video covers the height */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
+  transform: translate(-50%, -50%); 
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto; 
 }
 header {
-  background: rgba(255, 255, 255, 0.089);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -46,7 +48,7 @@ header {
 #city-search {
   background: rgba(60, 60, 85, 0.295);
   border-radius: 5px;
-  border: 1px inset rgba(4, 23, 126, 0.521);
+  border: 1px inset rgba(255, 255, 255, 0.521);
   color: whitesmoke;
   padding: 2px;
 }
@@ -54,26 +56,38 @@ header {
   outline: none;
 }
 #search-button {
-  color: rgb(199, 199, 199);
-  background: rgb(31, 82, 192);
-  border: 1px outset rgba(4, 13, 66, 0.521);
+  color:white;
+  background: rgba(65, 65, 65, 0.116);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);;
   border-radius: 5px;
   padding: 2px;
   transition: 500ms;
   font-weight: bold;
 }
 #search-button:hover {
-  color: gray;
-  background: rgb(65, 124, 252);
-  border: 1px outset rgba(4, 23, 126, 0.521);
+  color:white;
+  background: rgb(65, 65, 65);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);
   border-radius: 5px;
   padding: 2px;
   transition: 500ms;
 }
 #search-button:active {
-  color: gray;
-  background: rgb(65, 252, 143);
-  border: 1px outset rgba(4, 23, 126, 0.521);
+  color:white;
+  background: rgba(65, 65, 65, 0.116);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);
   border-radius: 5px;
   padding: 2px;
 }
@@ -86,7 +100,7 @@ header {
 #date-select {
   background: rgba(60, 60, 85, 0.295);
   border-radius: 5px;
-  border: 1px inset rgba(4, 23, 126, 0.521);
+  border: 1px inset rgba(252, 251, 251, 0.521);
   color: whitesmoke;
   padding: 2px;
 }
@@ -102,23 +116,54 @@ h2 {
   display: block;
 }
 label {
+  margin-top: 3vh;
   font-size: 30px;
+  font-weight: bolder;
   text-align: center;
+  color:white;
 }
 .cityCard {
   color: rgb(242, 253, 255);
-  background: rgba(48, 106, 182, 0.315);
+  background: rgba(110, 110, 110, 0.267);
   padding: 20px;
   margin: 3px;
   width: 30vw;
   font-size: 20px;
   text-align: center;
   border-radius: 10px;
-  border: 1px outset rgba(56, 89, 240, 0.226);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);
 }
 #ls-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+}
+.removeButton{
+  color:white;
+  background: rgba(65, 65, 65, 0.116);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+  padding: 2px;
+  transition: 500ms;
+}
+.removeButton:hover{
+  color:white;
+  background: rgb(65, 65, 65);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
+  border: 2px solid rgba(226, 232, 255, 0.384);
+  border-right: 2px solid rgba(56, 89, 240, 0.226);
+  border-bottom: 2px solid rgba(56, 89, 240, 0.226);
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+  padding: 2px;
+  transition: 500ms;
 }
