@@ -16,18 +16,18 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   z-index: -1;
 }
 video {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  min-width: 100%; 
-  min-height: 100%; 
-  width: auto; 
-  height: auto; 
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 header {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
@@ -41,6 +41,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  margin-top: 5px;
   width: fit-content;
   gap: 20px;
   color: aliceblue;
@@ -56,20 +57,20 @@ header {
   outline: none;
 }
 #search-button {
-  color:white;
+  color: white;
   background: rgba(65, 65, 65, 0.116);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
   border: 2px solid rgba(226, 232, 255, 0.384);
   border-right: 2px solid rgba(56, 89, 240, 0.226);
   border-bottom: 2px solid rgba(56, 89, 240, 0.226);
-  backdrop-filter: blur(3px);;
+  backdrop-filter: blur(3px);
   border-radius: 5px;
   padding: 2px;
   transition: 500ms;
   font-weight: bold;
 }
 #search-button:hover {
-  color:white;
+  color: white;
   background: rgb(65, 65, 65);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
   border: 2px solid rgba(226, 232, 255, 0.384);
@@ -81,7 +82,7 @@ header {
   transition: 500ms;
 }
 #search-button:active {
-  color:white;
+  color: white;
   background: rgba(65, 65, 65, 0.116);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
   border: 2px solid rgba(226, 232, 255, 0.384);
@@ -120,7 +121,7 @@ h2 {
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-  color:white;
+  color: white;
 }
 .cityCard {
   color: rgb(242, 253, 255);
@@ -143,8 +144,8 @@ h2 {
   justify-content: center;
   flex-direction: row;
 }
-.removeButton{
-  color:white;
+.removeButton {
+  color: white;
   background: rgba(65, 65, 65, 0.116);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
   border: 2px solid rgba(226, 232, 255, 0.384);
@@ -155,8 +156,8 @@ h2 {
   padding: 2px;
   transition: 500ms;
 }
-.removeButton:hover{
-  color:white;
+.removeButton:hover {
+  color: white;
   background: rgb(65, 65, 65);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.178);
   border: 2px solid rgba(226, 232, 255, 0.384);
